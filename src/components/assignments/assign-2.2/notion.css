@@ -1,0 +1,29 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(59, 119, 247);
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+}
+ul{
+    list-style-type: none;
+}
+.nleft{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    font-size: 1.5rem;
+}
+.ulflex{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+}
+.ulflex1{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+}
