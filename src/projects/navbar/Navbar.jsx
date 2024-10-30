@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import searchIcon from '../../assets/search-img.png';
 
@@ -11,15 +12,15 @@ function Navbar() {
       </div>
       <div className="search-domain">
         <div className="search-input-container">
-          <img className='searchicon' src={searchIcon} alt="Search Icon" />
-          <input className='searchinput' type="text" placeholder='Search...' />
+          <img className="searchicon" src={searchIcon} alt="Search Icon" />
+          <input className="searchinput" type="text" placeholder="Search..." />
         </div>
       </div>
       <div className="content-domain-ul">
-        <div className="nav-item">Home</div>
-        <div className="nav-item">About</div>
-        <div className="nav-item">Sign up</div>
-        <div className="nav-item">Log in</div>
+        <Link to="/" className="nav-item">Home</Link>
+        <Link to="/about" className="nav-item">About</Link>
+        <Link to="/signup" className="nav-item">Sign up</Link>
+        <Link to="/login" className="nav-item">Log in</Link>
       </div>
     </div>
   );

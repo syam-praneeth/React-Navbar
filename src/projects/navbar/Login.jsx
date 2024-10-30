@@ -1,20 +1,20 @@
 import React from 'react';
-import './Sidebar.css';
+import './Login.css';
 
-const Login = () => {
+function Login(){
   return (
-    <div className="auth-container">
-      <h2>Log In</h2>
-      <form>
+    <div className="login-container">
+      <h1 className="text-center text-primary animate-header">Log In</h1>
+      <form className="form-container">
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" required />
+          <label htmlFor="email" className="form-label">Email or Username:</label>
+          <input type="email" id="email" required className="form-input" />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" required />
+          <label htmlFor="password" className="form-label">Password:</label>
+          <input type="password" id="password" required className="form-input" />
         </div>
-        <button type="submit">Log In</button>
+        <button type="submit" className="btn btn-primary submit-btn">Log In</button>
       </form>
     </div>
   );
