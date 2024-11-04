@@ -1,68 +1,49 @@
+
 .auth-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #f0f4ff, #d0e8ff);
-  }
-  
-  .text-primary {
-    color: #007bff;
-  }
-  
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: slideUp 0.8s ease-out forwards;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-label {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .form-input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-  }
-  
-  .form-input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  .submit-btn {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .submit-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  @keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #D4BEE4, #EEEEEE);
+}
+
+.text-primary {
+  color: #3B1E54;
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease-out forwards;
+}
+.form-label {
+  color: #3B1E54;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #3B1E54; 
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #2A153D;
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
